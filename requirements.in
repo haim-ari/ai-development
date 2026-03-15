@@ -1,0 +1,42 @@
+# AI Developers Course — March 2026
+# Base requirements for all course repositories
+
+# Core (Sessions 1-4)
+numpy
+matplotlib
+scikit-learn
+pandas
+jupyter
+notebook
+jupyterlab
+ipykernel
+python-dotenv
+requests
+tqdm
+
+# NLP & Deep Learning (Sessions 2-7)
+torch
+torchvision
+transformers
+sentence-transformers
+gensim
+nltk
+tiktoken
+
+# LLM & API (Sessions 5-8)
+openai
+cohere
+anthropic
+datasets
+beautifulsoup4
+
+# Developer Tools
+pyright
+
+# RAG & Agents (Sessions 9+)
+chromadb
+rank-bm25
+langchain
+langchain-openai
+langchain-community
+langgraph

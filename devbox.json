@@ -1,0 +1,21 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.16.0/.schema/devbox.schema.json",
+  "packages": [
+    "python@3.12.13",
+    "uv@0.10.9",
+    "git@2.47.2"
+  ],
+  "shell": {
+    "init_hook": [
+      "export PATH=\"$HOME/.local/bin:$HOME/.npm-global/bin:/opt/homebrew/bin:$PATH\"",
+      "if [ ! -d .venv ]; then uv venv --python python3.12 .venv; fi",
+      ". .venv/bin/activate",
+      "if [ -f requirements.txt ] && [ ! -f .venv/.installed ]; then uv pip install -r requirements.txt && touch .venv/.installed; fi"
+    ],
+    "scripts": {
+      "test": [
+        "python check_setup.py"
+      ]
+    }
+  }
+}
